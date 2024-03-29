@@ -76,7 +76,7 @@ export default function Home() {
  </section>
 
  <div className='bg-green-50 '>
-  <div className='container mx-auto flex justify-around flex-wrap p-4 md:p-8 gap-4'>
+  <div className='container mx-auto flex justify-around flex-col md:flex-row p-4 md:p-8  gap-4'>
   <div>
         <h2 className='font-bold text-2xl md:text-4xl text-[#50c878]'>345 million</h2>
         <p className='font-medium text-base md:text-xl text-gray-500'>PEOPLE FACING FOOD INSECURITY</p>
@@ -105,8 +105,8 @@ export default function Home() {
  <div className="!flex !justify-center items-center w-[100%]">
     <div className='text-center'>
 
-    <h1 className="text-5xl mb-5 font-bold font-popins">About Us</h1>
-    <p className="text-2xl p-2 font-popins font-normal">
+    <h1 className="text-3xl p-4 md:text-5xl mb-5 font-bold font-popins">About Us</h1>
+    <p className="text-xl md:text-2xl p-2 font-popins font-normal">
      By His Grace Foundation was founded by Dr. Bolaji Olugboja in the year of 2020.His primary aim is to foster a future where,
      have equal to thrive.
     </p>
@@ -238,8 +238,9 @@ export default function Home() {
     {/**/}
     <div className='flex flex-col-reverse md:flex-row justify-between w-full'>
         <div className='w-full md:w-1/2'>
-            <img alt='ngo'
+            <img 
             src='/images/flyer1.jpg'
+            alt='we can end hunger'
           
             />
         </div>
@@ -370,7 +371,7 @@ export default function Home() {
         <div className="text-center">
             <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
             <p className="text-lg mb-8">Have questions? Reach out to us.</p>
-            <a href="#" className="bg-white text-[#50c878] py-2 px-6 rounded-full text-lg hover:bg-gray-200 transition duration-300">Get in Touch</a>
+            <a href="mailto:byhisgracefoundationinc@gmail.com" className="bg-white text-[#50c878] py-2 px-6 rounded-full text-lg hover:bg-gray-200 transition duration-300">Get in Touch</a>
         </div>
 
         {/* Right Content: Other Information */}
