@@ -107,8 +107,7 @@ export default function Home() {
 
     <h1 className="text-3xl p-4 md:text-5xl mb-5 font-bold font-popins">About Us</h1>
     <p className="text-xl md:text-2xl p-2 font-popins font-normal">
-     By His Grace Foundation was founded by Dr. Bolaji Olugboja in the year of 2020.His primary aim is to foster a future where,
-     have equal to thrive.
+    ByHisGrace Foundation was found by Dr. Bolaji Olugboja in the year 2020. The primary aim of this foundation is to foster a future where individuals have equal opportunities to thrive.
     </p>
 
     </div>
