@@ -1,7 +1,9 @@
+"use client"
 import Head from 'next/head';
 import Image from 'next/image';
 import { lazy } from 'react';
 import Artboardimg1 from '../../public/images/Artboard_1.jpg'
+import Navbar from './components/Navbar';
 
 export default function Home() {
  return (
@@ -23,42 +25,27 @@ export default function Home() {
 
         <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet"/>
       </Head>
-    {/*  <div className='flex border-8 !p-0 items-center'>
-          <div>
-            <img src={'/images/LOGO .png'} className='w-40 '   alt='logo'/>
-          </div>
-
-          <div>
-            <ul className='flex'>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>mission and vission</li>
-              <li>goals</li>
-            </ul>
-
-          </div>
-
-          <div>
-            <button>togul</button>
-
-          </div>
- </div>*/}
+    
+  
       <div>
+        <Navbar/>
        
-      
-        <>
+
  <section style={{
         backgroundImage: `url('/images/image7.jpg')`,
-        height: '972px',
+        
       }} className="bg-cover bg-center bg-no-repeat  bg-gray-700 bg-blend-multiply">
-    <div className="px-4 mx-auto max-w-screen-xl text-center space-y-8 py-24 lg:py-56">
+    <div className="px-4 mx-auto  text-center space-y-8 py-24 lg:py-56">
       <div className="flex flex-col justify-center">
-        <h2 className="text-white mb-0 text-5xl md:text-[100px]  md:font-[600] font-medium font-popins">BHGF</h2>
-        <span className='text-white text-xl'>BY HIS GRACE FOUNDATION</span>
+        {/* <h2 className="text-white mb-0 text-5xl md:text-[100px]  md:font-[600] font-medium font-popins">BHGF</h2>
+        <span className='text-white text-xl'>BY HIS GRACE FOUNDATION</span> */}
+
+        <img src='/images/LOGO.png' className='w-100'/>
+       
       </div>
 
       <div className="text-white text-sm font-medium md:text-[28px] leading-normal md:font-[300]">
-        <span>The world is in the grip of the most devastating hunger crisis ever seen. The lives of 26 million children are at risk.</span>
+        <span>The world is facing the most severe hunger crisis in history, endangering the lives of 26 million adults and children</span>
       </div>
 
       <div>
@@ -97,26 +84,26 @@ export default function Home() {
  </div>
 
 
-</>
+
        
       </div>
 
-      <section id="aboutus" className="flex flex-col md:flex-row bg-[#50c878] text-white ">
- <div className="!flex !justify-center items-center w-[100%]">
-    <div className='text-center'>
 
-    <h1 className="text-3xl p-4 md:text-5xl mb-5 font-bold font-popins">About Us</h1>
-    <p className="text-xl md:text-2xl p-2 font-popins font-normal">
+<section id='aboutus' class='flex flex-col md:flex-row bg-[#50c878] text-white p-6 gap-4'>
+
+<div class='mt-8 text-center w-[100%] md:w-[60%] gap-4'>
+<h1 className="text-3xl p-4 md:text-5xl mb-5 font-bold font-popins">About Us</h1>
+<p className="text-xl md:text-2xl p-2 font-popins font-normal">
     ByHisGrace Foundation was found by Dr. Bolaji Olugboja in the year 2020. The primary aim of this foundation is to foster a future where individuals have equal opportunities to thrive.
-    </p>
+        </p>
+</div>
+<div class='w/2'> 
 
-    </div>
+<Image  src={'https://img.freepik.com/free-photo/group-happy-african-volunteers-hugs-park-africa-volunteering-charity-people-ecology-concept_627829-328.jpg?t=st=1712653825~exp=1712657425~hmac=5e02d5af045d137e3d9df136d17986f69b45f6f3d46e008256d25007db69d33c&w=740'} width={550} height={500} alt="NGO Image" className='rounded-md' />
 
- </div>
- <div className="w-full md:w-1/2">
-    <Image src={Artboardimg1} width={500} height={500} alt="NGO Image" />
- </div>
-</section>
+
+</div>
+</section  >
 
 
 <section className=" text-white my-8 ">
@@ -128,7 +115,7 @@ export default function Home() {
 
     <div className='w-full  '>
         
-      <Image className='object-cover h-full ' src="/images/ArtBoard_5.jpg" height={500} width={500} alt="NGO Mission" />
+      <Image className='object-cover h-full ' src="https://img.freepik.com/premium-photo/help-support-wheelchair-with-nurse-old-man-disability-rehabilitation-healing-retirement-physiotherapy-healthcare-with-patient-black-woman-nursing-home-medical-caregiver_590464-124292.jpg?w=740" height={500} width={500} alt="NGO Mission" />
     </div>
 
     <div className="text-center mt-5 p-4 md:my-8 space-y-5">
@@ -364,7 +351,7 @@ export default function Home() {
     </div>
 </section>
 
-<section className="bg-cover bg-center bg-blend-multiply bg-gray-500 text-white flex items-center py-16" style={{ backgroundImage: "url('/images/LOGO .png')" }}>
+<section id='contact' className="bg-cover bg-center bg-blend-multiply bg-gray-500 text-white flex items-center py-16" style={{ backgroundImage: "url('/images/LOGO .png')" }}>
     <div className="max-w-screen-lg mx-auto flex justify-between items-center">
         {/* Left Content: Contact Button */}
         <div className="text-center">
@@ -401,6 +388,9 @@ export default function Home() {
         <p className="text-lg mt-4">&copy; 2024 By His Grace Foundation. All rights reserved.</p>
     </div>
 </footer>
+
+
+
 
 
     </>
