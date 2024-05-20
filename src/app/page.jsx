@@ -123,7 +123,11 @@ export default function Home() {
 
     <div className="text-center mt-5 p-4 md:my-8 space-y-5">
       <h1 className="text-5xl font-bold text-[#50c878]">Our Vision</h1>
-      <p className='text-gray-800'>Our vision is to create a society where no one goes hungry and every individual has access to quality education. Through our commitment to providing sustenance and educational support, we strive to build a future where every person can thrive, learn, and contribute to their fullest potential, fostering a community of empowerment and opportunity for all.</p>
+      <p className='text-gray-800'>Our vision is to create a society where no one goes hungry and every individual has access to quality education. Through our commitment to providing sustenance and educational support, we strive to build a future where every person can thrive, learn, and contribute to their fullest potential, fostering a community of empowerment and opportunity for all.Also we are concern about
+      caring for everyone  with depression and mental health issue , providing adequate help/treatment for affected patients.
+     
+      </p>
+      
     </div>
  </div>
 </section>
@@ -373,7 +377,9 @@ export default function Home() {
         {/* Right Content: Other Information */}
         <div className="hidden md:block md:w-1/2">
             {/* Add other content here */}
-            <p className="text-lg">Join us in our mission to create a hunger-free and poverty-free community. You can contribute by volunteering, making donations, or participating in our events. Every effort counts!</p>
+            <p className="text-lg">Join us in our mission to create a hunger-free and poverty-free community. 
+            You can contribute by volunteering, making donations, 
+            or participating in our events. Every effort counts!.</p>
         </div>
     </div>
 </section>

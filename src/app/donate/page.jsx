@@ -53,16 +53,39 @@ function donate() {
 
       <div className='mt-8'>
         <ul className='flex flex-col flex-wrap justify-between gap-6'>
-          <li className='flex items-center space-x-2'>
+    
+
+          <li className='flex flex-wrap space-y-4 md:flex-row items-center space-x-4'>
+            <div  className='bg-green-200 rounded-full p-3 md:p-8 '>
+            <Image src='paypal-seeklogo.svg' className='w-40 md:w-28' alt='zeller logo'        width="550"
+        height="310"  />
+         
+            </div>
+            <div className=''>
+              <h2 className='text-xl md:text-3xl font-bold '>
+              PayPal: Byhisgrace
+              </h2>
+           
+             <span>
+              Transfer any amount to the paypal account ranging from $5+
+             </span>
+
+            </div>
+          </li>
+
+          <li className='flex flex-wrap space-y-4 md:flex-row items-center space-x-4'>
             <div className='bg-green-200 rounded-full p-3 md:p-8 '>
-            <Image src='zellers-seeklogo-4.svg' className='w-8 md:w-28' alt='zeller logo'        width="550"
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Zellers_2022_Logo.svg/1200px-Zellers_2022_Logo.svg.png' className='w-40 md:w-28' alt='zeller logo'        width="550"
         height="310"  />
             </div>
 
-            <div className=''>
-              <h2 className='text-sm md:text-3xl font-bold '>
-              Byhisgracefoundationinc@gmail.com
+            <div className='text-wrap '>
+              <h2 className='text-xl w-40  md:text-3xl font-bold '>
+                Zelle: Byhisgracefoundationinc
+                @gmail.com
               </h2>
+
+            
            
              <span>
               Transfer any amount to the zeller account ranging from $5+
@@ -73,32 +96,14 @@ function donate() {
 
           </li>
 
-          <li className='flex items-center space-x-2'>
-            <div  className='bg-green-200 rounded-full p-3 md:p-8 '>
-            <Image src='paypal-seeklogo.svg' className='w-8 md:w-28' alt='zeller logo'        width="550"
-        height="310"  />
-         
-            </div>
-            <div className=''>
-              <h2 className='text-sm md:text-3xl font-bold '>
-              Byhisgrace
-              </h2>
-           
-             <span>
-              Transfer any amount to the paypal account ranging from $5+
-             </span>
-
-            </div>
-          </li>
-
-          <li className='flex items-center space-x-2'>
+          <li className='flex flex-wrap space-y-4 md:flex-row items-center space-x-4'>
             <div  className='bg-green-200 rounded-full p-3 md:p-8 ' >
-              <Image className='w-10 md:w-28 rounded-md' src={'https://logo-marque.com/wp-content/uploads/2021/05/Bank-of-America-top-logo.jpg'} alt='bank of america'  width="550"
+              <Image className='w-40 md:w-28 ' src={'https://logo-marque.com/wp-content/uploads/2021/05/Bank-of-America-top-logo.jpg'} alt='bank of america'  width="550"
         height="310" />
             </div>
             <div className=''>
-              <h2 className='text-sm md:text-3xl font-bold '>
-              Account No: 446054714508
+              <h2 className='text-xl md:text-3xl font-bold '>
+              Bank of America: Account No: 446054714508
               </h2>
            
              <span>
@@ -120,9 +125,9 @@ function donate() {
 
   </div>
   <div className='my-10 text-xl text-center md:text-3xl font-light leading-tight'>
-      Together, we can make a lasting impact on lives.Your generosity fuels our mission, bringing hope to communities in need
+      Together, we can make a lasting impact on lives.Your generosity fuels our mission, bringing hope to communities in need.
 
-Thank you for being a catalyst to positive change
+Thank you for being a catalyst to positive change.
       </div>
 
 </section>
