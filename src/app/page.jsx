@@ -1,9 +1,10 @@
 "use client"
 import Head from 'next/head';
 import Image from 'next/image';
-import { lazy } from 'react';
+
 import Artboardimg1 from '../../public/images/Artboard_1.jpg'
 import Navbar from './components/Navbar';
+import Link from 'next/link';
 
 export default function Home() {
  return (
@@ -12,16 +13,19 @@ export default function Home() {
         <title>ByHisGrace Foundation</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon_io/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon_io/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon_io/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+      
         <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
         
         <link rel="preconnect" href="https://fonts.googleapis.com"  />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
+
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="images/LOGO.png" />
+        <link rel="icon"   type="image/<generated>" sizes="32x32" href="images/LOGO.png" />
+        <link rel="icon"   type="image/<generated>" sizes="16x16" href="images/LOGO.png" />
 
         <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet"/>
       </Head>
@@ -89,15 +93,15 @@ export default function Home() {
       </div>
 
 
-<section id='aboutus' class='flex flex-col md:flex-row bg-[#50c878] text-white p-6 gap-4'>
+<section id='aboutus' className='flex flex-col md:flex-row bg-[#50c878] text-white p-6 gap-4'>
 
-<div class='mt-8 text-center w-[100%] md:w-[60%] gap-4'>
+<div className='mt-8 text-center w-[100%] md:w-[60%] gap-4'>
 <h1 className="text-3xl p-4 md:text-5xl mb-5 font-bold font-popins">About Us</h1>
 <p className="text-xl md:text-2xl p-2 font-popins font-normal">
     ByHisGrace Foundation was found by Dr. Bolaji Olugboja in the year 2020. The primary aim of this foundation is to foster a future where individuals have equal opportunities to thrive.
         </p>
 </div>
-<div class='w/2'> 
+<div className='w/2'> 
 
 <Image  src={'https://img.freepik.com/free-photo/group-happy-african-volunteers-hugs-park-africa-volunteering-charity-people-ecology-concept_627829-328.jpg?t=st=1712653825~exp=1712657425~hmac=5e02d5af045d137e3d9df136d17986f69b45f6f3d46e008256d25007db69d33c&w=740'} width={550} height={500} alt="NGO Image" className='rounded-md' />
 
@@ -240,15 +244,18 @@ export default function Home() {
         
         <div className='flex justify-center font-popins font-normal test-base md:text-3xl leading-snug my-8'>
         Hunger is still one the biggest – and most solvable – problems in the world.
-             We have already made incredible progress: there are 300 million fewer hungry people now than in the 90’s. WFP is working for that every second of the day, feeding over 95 million people in urgent need and implementing programmes that tackle the causes of hunger.
+             We have already made incredible progress: there are 300 million fewer hungry people now than in the 90’s. BHGF is working for that every second of the day, feeding over 95 million people in urgent need and implementing programmes that tackle the causes of hunger.
              But this work depends on the support of people like you.
 
         </div>
           
           <div className='text-center'>
+            <Link href={'/donate'}>
             <button className='bg-[#50c878] p-4 w-full md:w-80 text-white rounded-full font-bold'>
             Donate
             </button>
+            </Link>
+          
         
           </div>
            
@@ -339,7 +346,11 @@ export default function Home() {
             <p className="text-lg font-popins font-normal text-gray-5s00">Your contribution can make a significant impact on the lives of those struggling with hunger. Together, let's create a world where no one sleeps hungry.</p>
 
             <div className='p-4'>
+              <Link href='/donate'>
               <button className='bg-[#50c878] p-4 rounded text-white font-medium w-full md:w-80 hover:bg-gray-200 hover:text-black'>Donate</button>
+
+              </Link>
+             
             </div>
            
         </div>

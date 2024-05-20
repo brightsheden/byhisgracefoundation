@@ -8,6 +8,14 @@ const nextConfig = {
             port: '',
             pathname: '/**',
           },
+
+          {
+            protocol: 'https',
+            hostname: 'logo-marque.com',
+            port: '',
+            pathname: '/**',
+          },
+
         ],
       },
 
