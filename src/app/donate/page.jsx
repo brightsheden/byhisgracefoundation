@@ -63,7 +63,7 @@ function donate() {
             </div>
             <div className=''>
               <h2 className='text-xl md:text-3xl font-bold '>
-              PayPal: Byhisgrace
+              PayPal:  byhisgracefoundationinc@gmail.com
               </h2>
            
              <span>
