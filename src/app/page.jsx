@@ -123,8 +123,7 @@ export default function Home() {
 
     <div className="text-center mt-5 p-4 md:my-8 space-y-5">
       <h1 className="text-5xl font-bold text-[#50c878]">Our Vision</h1>
-      <p className='text-gray-800'>Our vision is to create a society where no one goes hungry and every individual has access to quality education. Through our commitment to providing sustenance and educational support, we strive to build a future where every person can thrive, learn, and contribute to their fullest potential, fostering a community of empowerment and opportunity for all.Also we are concern about
-      caring for everyone  with depression and mental health issue , providing adequate help/treatment for affected patients.
+      <p className='text-gray-800'>Our vision is to create a society where no one goes hungry, and every individual has access to quality education. Through our commitment to providing sustenance and educational support, we strive to build a future where every person can thrive, learn, and contribute to their fullest potential. We aim to foster a community of empowerment and opportunity for all. Additionally, we are dedicated to caring for everyone with depression and mental health issues, providing adequate help and treatment for affected individuals.
      
       </p>
       
@@ -364,6 +363,36 @@ export default function Home() {
         </div>
     </div>
 </section>
+
+
+<section className="container mx-auto px-2 py-16">
+    <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+        {/* Donation Text */}
+        <div className="md:w-1/2 text-center">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 font-popins text-[#50c878]">Invest in Mental Health, Reap a Healthier Community</h2>
+         
+
+            <p className='text-lg font-popins font-normal text-gray-500'>More than 700 000 people die due to suicide every year. For every suicide there are many more people who attempt suicide due to mental and emotional stress. Suicide is the fourth leading cause of death among 15-29 year olds. 13.6% of adults 18-25 had serious thoughts of suicide in the past year (SAMHSA, 2023). Effective and evidence-based interventions can be implemented at population, sub-population and individual levels to prevent suicide and suicide attempts. There are indications that for each adult who died by suicide there may have been more than 20 others attempting suicide.
+            </p>
+
+            <p className='text-lg font-popins font-normal text-gray-500 mt-10'>Suicide is a global phenomenon; in fact, 77% of suicides occurred in low- and middle-income countries . Suicide accounted for 1.3% of all deaths worldwide, making it the 17th leading cause of death since 2019. We are dedicated in BHIF to caring for everyone with depression and mental health issues. Making sure all affected individuals are adequately taken care of and treated effectively. </p>
+            <div className='p-4'>
+              <Link href='/donate'>
+              <button className='bg-[#50c878] p-4 rounded text-white font-medium w-full md:w-80 hover:bg-gray-200 hover:text-black'>Donate</button>
+
+              </Link>
+             
+            </div>
+           
+        </div>
+
+        {/* Donation Image */}
+        <div className="md:w-1/2">
+            <Image height={500} width={500}  src="/images/bhgfnwimg.jpg" alt="NGO Donation Image" className="rounded-lg shadow-md border-2 border-green-400" />
+        </div>
+    </div>
+</section>
+
 
 <section id='contact' className="bg-cover bg-center bg-blend-multiply bg-gray-500 text-white flex items-center py-16" style={{ backgroundImage: "url('/images/LOGO .png')" }}>
     <div className="max-w-screen-lg mx-auto flex justify-between items-center">
