@@ -54,7 +54,7 @@ function donate() {
       <div className='mt-8'>
         <ul className='flex flex-col flex-wrap justify-between gap-6'>
     
-
+          {/*
           <li className='flex flex-wrap space-y-4 md:flex-row items-center space-x-4'>
             <div  className='bg-green-200 rounded-full p-3 md:p-8 '>
             <Image src='paypal-seeklogo.svg' className='w-40 md:w-28' alt='zeller logo'        width="550"
@@ -71,7 +71,7 @@ function donate() {
              </span>
 
             </div>
-          </li>
+          </li> */}
 
           <li className='flex flex-wrap space-y-4 md:flex-row items-center space-x-4'>
             <div className='bg-green-200 rounded-full p-3 md:p-8 '>
