@@ -2,9 +2,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-import Artboardimg1 from '../../public/images/Artboard_1.jpg'
+
 import Navbar from './components/Navbar';
 import Link from 'next/link';
+import HeroSection from './components/HeroSection';
+import NewHero from './components/NewHero';
 
 export default function Home() {
  return (
@@ -34,36 +36,8 @@ export default function Home() {
         <Navbar/>
        
 
- <section style={{
-        backgroundImage: `url('/images/image7.jpg')`,
-        
-      }} className="bg-cover bg-center bg-no-repeat  bg-gray-700 bg-blend-multiply">
-    <div className="px-4 mx-auto  text-center space-y-8 py-24 lg:py-56">
-      <div className="flex flex-col justify-center">
-        {/* <h2 className="text-white mb-0 text-5xl md:text-[100px]  md:font-[600] font-medium font-popins">BHGF</h2>
-        <span className='text-white text-xl'>BY HIS GRACE FOUNDATION</span> */}
 
-        <img src='/images/LOGO.png' className='w-100'/>
-       
-      </div>
-
-      <div className="text-white text-sm font-medium md:text-[28px] leading-normal md:font-[300]">
-        <span>The world is facing the most severe hunger crisis in history, endangering the lives of 26 million adults and children</span>
-      </div>
-
-      <div>
-        <a href="#aboutus">
-          <button className="p-2 text-white bg-[#50c878] rounded-full px-[43px] py-[10px] text-2xl font-[600] leading-[29.05px]">Learn more</button>
-        </a>
-      </div>
-
-      <div>
-        <div className="text-white text-base font-medium md:text-[24px] md:font-[400] mt-5 md:leading-[29.05px]">
-          <span>Igniting Hope, Nourishing Lives</span>
-        </div>
-      </div>
-    </div>
- </section>
+ <NewHero/>
 
  <div className='bg-green-50 '>
   <div className='container mx-auto flex justify-around flex-col md:flex-row p-4 md:p-8  gap-4'>
@@ -95,7 +69,7 @@ export default function Home() {
 <section id='aboutus' className='flex flex-col md:flex-row bg-[#50c878] text-white p-6 gap-4'>
 
 <div className='mt-8 text-center w-[100%] md:w-[60%] gap-4'>
-<h1 className="text-3xl p-4 md:text-5xl mb-5 font-bold font-popins">About Us</h1>
+<h1 className="text-3xl p-4 md:text-5xl mb-5 font-bold font-popins text-left">About Us</h1>
 <p className="text-xl md:text-2xl p-2 font-popins font-normal">
     ByHisGrace Foundation was found by Dr. Bolaji Olugboja in the year 2020. The primary aim of this foundation is to foster a future where individuals have equal opportunities to thrive.
         </p>

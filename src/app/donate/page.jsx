@@ -54,35 +54,16 @@ function donate() {
       <div className='mt-8'>
         <ul className='flex flex-col flex-wrap justify-between gap-6'>
     
-          {/*
-          <li className='flex flex-wrap space-y-4 md:flex-row items-center space-x-4'>
-            <div  className='bg-green-200 rounded-full p-3 md:p-8 '>
-            <Image src='paypal-seeklogo.svg' className='w-40 md:w-28' alt='zeller logo'        width="550"
-        height="310"  />
-         
-            </div>
-            <div className=''>
-              <h2 className='text-xl md:text-3xl font-bold '>
-              PayPal:  byhisgracefoundationinc@gmail.com
-              </h2>
-           
-             <span>
-              Transfer any amount to the paypal account ranging from $5+
-             </span>
-
-            </div>
-          </li> */}
-
-          <li className='flex flex-wrap space-y-4 md:flex-row items-center space-x-4'>
-            <div className='bg-green-200 rounded-full p-3 md:p-8 '>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Zellers_2022_Logo.svg/1200px-Zellers_2022_Logo.svg.png' className='w-40 md:w-28' alt='zeller logo'        width="550"
+        
+          <li className='flex flex-wrap space-y-4 md:flex-row items-center  gap-2'>
+            <div className=' '>
+            <img src='/images/zelle.png' className='w-40 md:w-28 text-green-500' alt='zeller logo'        width="550"
         height="310"  />
             </div>
 
             <div className='text-wrap '>
-              <h2 className='text-xl w-40  md:text-3xl font-bold '>
-                Zelle: Byhisgracefoundationinc
-                @gmail.com
+              <h2 className='text-base w-full  md:text-xl font-bold '>
+                Zelle: (410)258-0565
               </h2>
 
             
@@ -96,13 +77,13 @@ function donate() {
 
           </li>
 
-          <li className='flex flex-wrap space-y-4 md:flex-row items-center space-x-4'>
-            <div  className='bg-green-200 rounded-full p-3 md:p-8 ' >
+          <li className='flex flex-col  space-y-4 md:flex-row items-center space-x-4'>
+            <div  className='' >
               <Image className='w-40 md:w-28 ' src={'https://logo-marque.com/wp-content/uploads/2021/05/Bank-of-America-top-logo.jpg'} alt='bank of america'  width="550"
         height="310" />
             </div>
             <div className=''>
-              <h2 className='text-xl md:text-3xl font-bold '>
+              <h2 className='text-base mb-2 md:text-xl font-bold '>
               Bank of America: Account No: 446054714508
               </h2>
            
@@ -112,6 +93,26 @@ function donate() {
 
             </div>
           </li>
+
+            
+          <li className='flex flex-col space-y-4 md:flex-row items-center space-x-4'>
+            <div  className=' '>
+            <Image src='paypal-seeklogo.svg' className='w-40 md:w-28' alt='paypal logo'        width="550"
+        height="310"  />
+         
+            </div>
+           {/* <div className=''>
+              <h2 className='text-xl md:text-3xl font-bold '>
+              PayPal:  byhisgracefoundationinc@gmail.com
+              </h2>
+           
+             <span>
+              Transfer any amount to the paypal account ranging from $5+
+             </span>
+
+            </div> */}
+          </li> 
+
         </ul>
       </div>
 
